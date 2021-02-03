@@ -1,0 +1,69 @@
+<style>
+    .interface{
+    width:100%;
+    height: 420px;
+    margin: 20px auto;
+    border: 1px solid lightblue;
+    text-align: center;
+    }
+    form p{
+        font-family: monospace;
+        font-size: 20px;
+        color: lightblue;
+        display: inline-block;
+    }
+    .interface textarea{
+        border-radius: 5px;
+        border: 1px solid lightblue;
+        background-color: lightblue;
+        margin-top: -20px;
+    }
+    .interface input{
+        width: 210px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid lightblue;
+        background-color: lightblue;
+        margin-top: -20px;
+    }
+    .interface button{
+        border: 1px solid lightblue;
+        color: lightblue;
+        background-color: darkblue;
+        font-family: monospace;
+        font-size: 20px;
+        border-radius: 5px;
+        margin: 5px;
+    }
+    .interface span{
+         border: 1px solid lightblue;
+        color: lightblue;
+        background-color: darkblue;
+        font-family: monospace;
+        font-size: 20px;
+        border-radius: 5px;
+        margin: 5px;
+        text-decoration: none;
+    }
+    .interface form{
+        width: 100%;
+        height: 400px;
+        text-align: center;
+        background-color: darkblue;
+    }
+    .interface a{
+        clear: both;
+        float: center;
+        margin-top: -60px;
+    }
+</style>
+<div class="interface">
+<form action="/cadO" method="POST">
+    <p>Titulo</p><br>
+    <input type="text" name="titulo"><br>
+    <p>Conteúdo</p><br>
+    <textarea name="conteudo" id="" cols="30" rows="10"></textarea><br>
+    <button type="submit">Cadastrar post</button><br>
+    <a href="/"><span>Lista de Posts</span></a>
+</form>
+</div>

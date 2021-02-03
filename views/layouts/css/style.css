@@ -1,0 +1,26 @@
+.interface{
+    width:100%;
+    height: 800px;
+    margin: 20px auto;
+    border: 1px solid rgb(168, 168, 168);
+}
+.interface h1{
+    color: darkblue;
+    font-family: monospace;
+    font-weight: bolder;
+}
+.areaPosts{
+    width: 100%;
+    height: 230px;
+    border: 1px solid #eee;
+}
+.areaPosts h1{
+    color: rgb(168, 168, 168);
+    font-family: monospace;
+}
+.areaPosts p{
+    color: rgb(3, 30, 105);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}

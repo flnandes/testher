@@ -1,0 +1,61 @@
+<style>
+    .interface{
+    width:100%;
+    height: 800px;
+    margin: 20px auto;
+    border: 1px solid rgb(168, 168, 168);
+}
+.interface h1{
+    color: darkblue;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: bolder;
+}
+.interface button{
+    text-align: right;
+    float: right;
+    margin-right: 50px;
+    color: lightblue;
+    background-color: darkblue;
+    font-family: monospace;
+    font-size: 15px;
+}
+.areaPosts button{
+    text-align: right;
+    float: right;
+    margin-right: 50px;
+    color: lightblue;
+    background-color: darkblue;
+    font-family: monospace;
+    font-size: 20px;
+}
+.areaPosts{
+    width: 100%;
+    height: 230px;
+    border: 1px solid #eee;
+}
+.areaPosts h1{
+    color: rgb(136, 136, 136);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.areaPosts p{
+    color: rgb(3, 30, 105);
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+}
+</style>
+<div class="interface">
+<h1>Lista de POSTAGENS</h1>
+<a href="/cad"><button>Novo Post</button></a>
+<br>
+<hr>
+{{#each posts}}
+    <div class="areaPosts">
+    <h1>{{dataValues.titulo}}</h1>
+    <p>{{dataValues.conteudo}}</p>
+    <a href="/deletar/{{dataValues.id}}"><button>Deletar</button></a>
+    </div>
+    <hr>
+{{/each}}
+</div>
